@@ -1,0 +1,14 @@
+Required files:
+	hooker.js - event handling dependencies
+	
+Information:
+'evnt' - the event to attach too.
+'elem' - the element to attach to - may be string input
+'func' - the function to execute when the event is called for the element
+
+Attach event:
+on: function(evnt, elem, func)
+Detach event:
+off: function(evnt, elem, func)
+Manually Fire/Activate event:
+fire: function(evnt, elem)
