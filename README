@@ -1,5 +1,5 @@
 Required files:
-	hooker.js - event handling dependencies
+	hook.js - event handling dependencies
 	
 Information:
 'evnt' - the event to attach too.
