@@ -1,18 +1,18 @@
 <html>
-	<head><title>Test Hooker</title></head>
+	<head><title>Test Hook</title></head>
 	<body>
 		<div id="clickzone" style="text-align:center;background:white;width:300;height:500;margin:0 auto;"> Hey, click here.</div>	
-    <script src="hooker.js"></script>
+    <script src="hook.js"></script>
 	<script>
 		// wait for the page load event to "doSomething"
-		hooker.on("load", document, doSomething());
+		hook.on("load", document, doSomething());
 		
 		function doSomething() {
 			// on page load, we're going green.
 			document.body.style.background = 'green';
 			
 			// handle a click on the clickzone
-			hooker.on("mousedown", "clickzone", doSomethingElse);
+			hook.on("mousedown", "clickzone", doSomethingElse);
 		}
 		
 		function doSomethingElse() {
